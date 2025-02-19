@@ -1,171 +1,58 @@
-/* Hero Section Styling */
-.hero {
-    background-image: url('https://images.unsplash.com/photo-1506748686210-d2046c1b79f9'); /* Image for MBBS abroad */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    z-index: 1;
-}
-
-/* Overlay for Hero Section */
-.hero .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for contrast */
-    z-index: -1;
-}
-
-/* Hero Text Styling */
-.hero h1 {
-    font-size: 4rem;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #FF4C60;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.hero p {
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: white;
-    margin-top: 15px;
-    opacity: 0.8;
-    transition: transform 0.3s ease;
-}
-
-/* Hover Effects on Hero Text */
-.hero h1:hover {
-    transform: scale(1.1);
-    color: #FF8A00;
-}
-
-.hero p:hover {
-    transform: scale(1.1);
-    color: #FF8A00;
-}
-
-/* CTA Button Styling */
-.hero a {
-    display: inline-block;
-       
-    background: linear-gradient(90deg, #FF4C60, #FF8A00);
-    color: white;
-    font-weight: 600;
-    padding: 15px 30px;
-    margin-top: 20px;
-    border-radius: 30px;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.hero a:hover {
-    background: linear-gradient(90deg, #FF8A00, #FF4C60);
-    transform: translateY(-5px);
-}
-
-/* Lead Form Styling */
-.lead-form {
-    background-color: white;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    /* Remove the margin-top: -50px; */
-    /* margin-top: -50px; */
-    width: 100%;
-    max-width: 400px;
-    animation: fadeInUp 0.8s ease-out;
-}
-
-/* Lead Form Title */
-.lead-form h2 {
-    font-size: 2.2rem;
-    text-align: center;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-/* Input Fields Styling */
-.lead-form input,
-.lead-form select {
-    width: 100%;
-    padding: 14px;
-    margin: 12px 0;
-    border-radius: 10px;
-    border: 2px solid #ddd;
-    font-size: 1rem;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.lead-form input:focus,
-.lead-form select:focus {
-    border-color: #FF4C60;
-    box-shadow: 0 0 10px rgba(255, 76, 96, 0.5);
-}
-
-/* Submit Button Styling */
-.lead-form button {
-    background-color: #FF4C60;
-    color: white;
-    padding: 15px 25px;
-    border-radius: 10px;
-    width: 100%;
-    border: none;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.lead-form button:hover {
-    background-color: #FF8A00;
-    transform: scale(1.05);
-}
-
-/* Animation for Lead Form */
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Body Background Color */
+/* General Styling */
 body {
-    background-color: #f7f7f7;
-    font-family: 'Roboto', sans-serif;
+    background: #f3f4f6;
+    font-family: 'Arial', sans-serif;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
-    }
+/* Centering Form */
+#form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
 
-    .hero p {
-        font-size: 1.2rem;
-    }
+/* Form Fields */
+.form-group {
+    margin-bottom: 15px;
+}
 
-    .lead-form {
-        width: 90%;
-        padding: 30px;
-    }
+.form-group label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+.form-input, .form-select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.form-input:focus, .form-select:focus {
+    border-color: #ff6b6b;
+    outline: none;
+}
+
+/* Submit Button */
+.submit-btn {
+    background: linear-gradient(90deg, #ff4c60, #ff8a00);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(90deg, #ff8a00, #ff4c60);
+    transform: scale(1.05);
 }
